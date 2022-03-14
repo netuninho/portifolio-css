@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200;300;400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #350b52;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-size: 30px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(img/pexels-rodion-kutsaiev-9436715.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px #D089FF;
+    margin-bottom: 45px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding:  50px;
+}
+
+header ul li a {
+    transition: 400ms;
+}
+
+header ul li a:hover {
+    color: #f8a662;
+    text-decoration: underline;
+}
+
+#logo {
+    border: 2px solid #1d1b1ab4;
+    border-radius: 100%;
+    width: 150px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+main p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+.container .name h5 {
+    font-size: 30px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #35224291;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+
+#about h1 {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    border: thick groove #ff9b4985;
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #d089ff49 50%, #f1a05ea2 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #413d3d;
+    font-weight: 700;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: #ffffff;
+}
+
+@media only screem and (max-width: 768) {
+    .form {
+        width: 100%;
+    }
+
+    .form buttom {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+    .form buttom {
+        font-size: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}

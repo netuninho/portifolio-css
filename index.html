@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f262ca1674.js" crossorigin="anonymous"></script>
+    <title>Manuela Silva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="https://i.picasion.com/pic91/035a6f6789ddee122d40696c58ced675.gif" alt="Logo Manuela Silva">
+        </div>
+
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/netuninho">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/manuela-silva-588ab71a4/">linkedin</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:manuelass.dev@gmail.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/21981985790">whatsapp</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Manuela Silva</h1>
+                <h5>Fullstack Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae commodi ab nihil totam fugit corporis veritatis obcaecati placeat, quis omnis, alias quas ut repellendus! Odio possimus quibusdam nihil non rem.</p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form>
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+
+            var display = document.getElementById('about');
+            display.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
